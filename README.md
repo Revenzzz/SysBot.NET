@@ -1,81 +1,81 @@
 # SysBot.NET
-![License](https://img.shields.io/badge/License-AGPLv3-blue.svg)
+![License](https://pfst.cf2.poecdn.net/base/image/373bd76ec7034dbe3c0220acf29365286b74b5dd1c19dbb63781975bf273392a?pmaid=567453342)
 
-## Support Discord:
+## 支持用 Discord（Support Discord）
 
-For support on setting up your own instance of SysBot.NET, feel free to join the discord! (Beware of un-official discords who claim to be official)
+如果你需要在搭建自己的 SysBot.NET 实例时获得帮助，欢迎加入 Discord 获取支持！（请注意：有些非官方 Discord 可能冒充官方，请务必辨别）
 
 [<img src="https://canary.discordapp.com/api/guilds/401014193211441153/widget.png?style=banner2">](https://discord.gg/tDMvSRv)
 
-[sys-botbase](https://github.com/olliz0r/sys-botbase) client for remote control automation of Nintendo Switch consoles.
+[sys-botbase](https://github.com/olliz0r/sys-botbase) 的客户端，用于对任天堂 Switch 主机进行远程控制与自动化操作。
 
-## SysBot.Base:
-- Base logic library to be built upon in game-specific projects.
-- Contains a synchronous and asynchronous Bot connection class to interact with sys-botbase.
+## SysBot.Base：
+- 可供各游戏专用项目构建与扩展的基础逻辑库。
+- 包含用于与 sys-botbase 交互的同步与异步 Bot 连接类。
 
-## SysBot.Tests:
-- Unit Tests for ensuring logic behaves as intended :)
+## SysBot.Tests：
+- 单元测试，用于确保逻辑行为符合预期 :)
 
-# Example Implementations
+# 示例实现（Example Implementations）
 
-The driving force to develop this project is automated bots for Nintendo Switch Pokémon games. An example implementation is provided in this repo to demonstrate interesting tasks this framework is capable of performing. Refer to the [Wiki](https://github.com/kwsch/SysBot.NET/wiki) for more details on the supported Pokémon features.
+开发这个项目的主要动力是为任天堂 Switch 的宝可梦游戏实现自动化机器人。本仓库提供了一个示例实现，用于展示该框架能够完成的一些有趣任务。更多已支持的宝可梦功能请参考 [Wiki](https://github.com/kwsch/SysBot.NET/wiki)。
 
-## SysBot.Pokemon:
-- Class library using SysBot.Base to contain logic related to creating & running Sword/Shield bots.
+## SysBot.Pokemon：
+- 使用 SysBot.Base 的类库，包含与创建和运行《宝可梦 剑/盾》机器人相关的逻辑。
 
-## SysBot.Pokemon.WinForms:
-- Simple GUI Launcher for adding, starting, and stopping Pokémon bots (as described above).
-- Configuration of program settings is performed in-app and is saved as a local json file.
+## SysBot.Pokemon.WinForms：
+- 一个简单的 GUI 启动器，用于添加、启动与停止宝可梦机器人（如上所述）。
+- 程序设置可在应用内配置，并保存为本地 JSON 文件。
 
-## SysBot.Pokemon.Discord:
-- Discord interface for remotely interacting with the WinForms GUI.
-- Provide a discord login token and the Roles that are allowed to interact with your bots.
-- Commands are provided to manage & join the distribution queue.
+## SysBot.Pokemon.Discord：
+- 用于远程与 WinForms GUI 交互的 Discord 接口。
+- 需要提供 Discord 登录 Token，以及允许与机器人交互的角色（Roles）。
+- 提供用于管理与加入派送队列（distribution queue）的命令。
 
-## SysBot.Pokemon.Twitch:
-- Twitch.tv interface for remotely announcing when the distribution starts.
-- Provide a Twitch login token, username, and channel for login.
+## SysBot.Pokemon.Twitch：
+- Twitch.tv 接口，用于在派送开始时进行远程公告等操作。
+- 需要提供 Twitch 登录 Token、用户名与要登录的频道。
 
-## SysBot.Pokemon.YouTube:
-- YouTube.com interface for remotely announcing when the distribution starts.
-- Provide a YouTube login ClientID, ClientSecret, and ChannelID for login.
+## SysBot.Pokemon.YouTube：
+- YouTube.com 接口，用于在派送开始时进行远程公告等操作。
+- 需要提供 YouTube 登录用的 ClientID、ClientSecret 与 ChannelID。
 
-Uses [Discord.Net](https://github.com/discord-net/Discord.Net) , [TwitchLib](https://github.com/TwitchLib/TwitchLib) and [StreamingClientLibary](https://github.com/SaviorXTanren/StreamingClientLibrary) as a dependency via Nuget.
+通过 NuGet 依赖使用 [Discord.Net](https://github.com/discord-net/Discord.Net)、[TwitchLib](https://github.com/TwitchLib/TwitchLib) 和 [StreamingClientLibary](https://github.com/SaviorXTanren/StreamingClientLibrary)。
 
-## SysBot.Pokemon.QQ:
-- Support [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
-- Support PK8 PB8 PA8 PK9 file upload
+## SysBot.Pokemon.QQ：
+- 支持 [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
+- 支持 PK8 / PB8 / PA8 / PK9 文件上传
 
-Most codes are based on [SysBot.Pokemon.Twitch](https://github.com/kwsch/SysBot.NET/tree/master/SysBot.Pokemon.Twitch)
+大部分代码基于 [SysBot.Pokemon.Twitch](https://github.com/kwsch/SysBot.NET/tree/master/SysBot.Pokemon.Twitch)。
 
-Uses [Mirai.Net](https://github.com/SinoAHpx/Mirai.Net) as a dependency via Nuget.
+通过 NuGet 依赖使用 [Mirai.Net](https://github.com/SinoAHpx/Mirai.Net)。
 
-Document: [搭建指南](https://github.com/easyworld/SysBot.NET/tree/master/SysBot.Pokemon.QQ), [命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
+文档：[搭建指南](https://github.com/easyworld/SysBot.NET/tree/master/SysBot.Pokemon.QQ)、[命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
 
-## SysBot.Pokemon.Dodo (Dead):
-**Notice: The Dodo platform was discontinued in June 15th 2025. All related features of this project are no longer functional. This repository is now archived for code reference only—none of the bot functionalities or commands are available anymore.**
-- Support [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
-- Support PK8 PB8 PA8 PK9 PA9 file upload
-- Support Customized Chinese to ALM-Showdown-Sets translation
+## SysBot.Pokemon.Dodo（已失效 / Dead）：
+**注意：Dodo 平台已于 2025 年 6 月 15 日停止服务。本项目与 Dodo 平台相关的功能均已无法使用。此仓库现仅作为代码参考用途归档——所有机器人功能与命令均不再可用。**
+- 支持 [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
+- 支持 PK8 / PB8 / PA8 / PK9 / PA9 文件上传
+- 支持将自定义中文内容翻译为 ALM-Showdown-Sets 格式
 
-Most codes are based on [SysBot.Pokemon.Twitch](https://github.com/kwsch/SysBot.NET/tree/master/SysBot.Pokemon.Twitch)
+大部分代码基于 [SysBot.Pokemon.Twitch](https://github.com/kwsch/SysBot.NET/tree/master/SysBot.Pokemon.Twitch)。
 
-Uses [dodo-open-net](https://github.com/dodo-open/dodo-open-net) as a dependency via Nuget.
+通过 NuGet 依赖使用 [dodo-open-net](https://github.com/dodo-open/dodo-open-net)。
 
-Document: [搭建指南](https://docs.qq.com/doc/DSVVZZk9saUNTeHNn), [命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
+文档：[搭建指南](https://docs.qq.com/doc/DSVVZZk9saUNTeHNn)、[命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
 
-## SysBot.Pokemon.Kook:
-**SysBot.Pokemon.Kook** is fully compatible with the [Kook](https://www.kookapp.cn/) (formerly known as Kaiheila) platform.
+## SysBot.Pokemon.Kook：
+**SysBot.Pokemon.Kook** 与 [Kook](https://www.kookapp.cn/)（原开黑啦）平台完全兼容。
 
-- Support [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
-- Support PK8 PB8 PA8 PK9 PA9 file upload
-- Support [Customized Chinese](https://docs.qq.com/doc/DSVlldkxMSW92VXZF) to ALM-Showdown-Sets translation
-- Easily configurable and extensible for the Kook ecosystem.
+- 支持 [ALM-Showdown-Sets](https://github.com/architdate/PKHeX-Plugins/wiki/ALM-Showdown-Sets)
+- 支持 PK8 / PB8 / PA8 / PK9 / PA9 文件上传
+- 支持将[自定义中文](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)翻译为 ALM-Showdown-Sets 格式
+- 易于配置与扩展，适配 Kook 生态
 
-Document: [搭建指南](https://docs.qq.com/doc/DSWpDQnBwSXRGSGR3), [命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
+文档：[搭建指南](https://docs.qq.com/doc/DSWpDQnBwSXRGSGR3)、[命令指南](https://docs.qq.com/doc/DSVlldkxMSW92VXZF)
 
-## Other Dependencies
-Pokémon API logic is provided by [PKHeX](https://github.com/kwsch/PKHeX/), and template generation is provided by [Auto-Legality Mod](https://github.com/architdate/PKHeX-Plugins/). Current template generation uses [@santacrab2](https://www.github.com/santacrab2)'s [Auto-Legality Mod fork](https://github.com/santacrab2/PKHeX-Plugins).
+## 其他依赖（Other Dependencies）
+宝可梦相关的 API 逻辑由 [PKHeX](https://github.com/kwsch/PKHeX/) 提供，模板生成由 [Auto-Legality Mod](https://github.com/architdate/PKHeX-Plugins/) 提供。目前的模板生成使用 [@santacrab2](https://www.github.com/santacrab2) 的 [Auto-Legality Mod 分支（fork）](https://github.com/santacrab2/PKHeX-Plugins)。
 
-# License
-Refer to the `License.md` for details regarding licensing.
+# 许可证（License）
+有关许可协议的详细信息，请参阅 `License.md`。
